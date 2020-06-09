@@ -30,4 +30,4 @@ jobs:
     - name: Installing surge
       run: npm install --global surge
     - name: Deploying using surge
-      run: surge ./home/farhan/Documents/GitHub/farhan-islam/index.html ashjafarhan.surge.sh --token ${{ secrets.SURGETOKEN }}
+      run: surge ./ ashjafarhan.surge.sh --token ${{ secrets.SURGETOKEN }}
