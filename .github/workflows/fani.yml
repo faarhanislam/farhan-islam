@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Farhan Islam
+name: indexhtml
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -30,4 +30,4 @@ jobs:
     - name: Installing surge
       run: npm install --global surge
     - name: Deploying using surge
-      run: surge ./home/farhan/Documents/GitHub/farhan-islam/index.html ashjafarhan.surge.sh --token $ {{ secrets.SURGETOKEN }}
+      run: surge ./home/farhan/Documents/GitHub/farhan-islam/index.html ashjafarhan.surge.sh --token ${{ secrets.SURGETOKEN }}
